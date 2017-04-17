@@ -1,0 +1,77 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Amiri', serif;
+	background: url("img/geometry.jpg"); #19000d;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed !important;
+	height: 100vh;
+	color: #fff;
+	font-size: 16px;
+}
+
+.contenedor {
+	background: rgba(0, 0, 0, .8);
+	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedorReloj {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-end;
+	margin-bottom: 3rem;
+}
+
+.reloj {
+	font-family: 'Amiri', serif;
+	font-size: 7em;
+	line-height: .5em;
+}
+
+.small {
+	font-size: 3.5em;
+	margin-left: .2em;
+	color: #ED764D;
+}
+
+.boton {
+	background: #E95420;
+	margin: 0 10px;
+	border: none;
+	color: white;
+	width: 2em;
+	height: 2em;
+	font-size: 3em;
+	border-radius: 3px;
+	font-family: 'Amiri', serif;
+	cursor: pointer;
+	transition: all .2s ease;
+}
+
+.boton:active{
+	background-image: linear-gradient(#F29879,#E95420);
+}
+.boton:hover{
+	animation: colorBoton 2s ease infinite;
+}
+.boton:disabled{
+	background: rgba(214, 211, 207,.5);
+	box-shadow: none;
+	color: #BEB8B2;
+	animation: none;
+}
+
+@keyframes colorBoton {
+	0% { box-shadow: none; }
+	50% { box-shadow: 0px 0px 8px #E95420; }
+	100% { box-shadow: none }
+}

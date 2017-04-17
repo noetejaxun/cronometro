@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cronometro</title>
+	<link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="contenedor">
+		<div class="contenedorReloj">
+			<div class="reloj" id="Horas">00</div>
+			<div class="reloj" id="Minutos">:00</div>
+			<div class="reloj" id="Segundos">:00</div>
+			<div class="reloj small" id="Centesimas">00</div>
+		</div>
+		<div class="botones">
+			<input data-key="83" type="button" class="boton" id="inicio" value="&#9658;" onclick="inicio();" >
+			<input type="button" class="boton" id="parar" value="&#8718;" onclick="parar();" disabled>
+			<input type="button" class="boton" id="continuar" value="&#8634;" onclick="inicio();" disabled>
+			<input type="button" class="boton" id="reinicio" value="&#8635;" onclick="reinicio();" disabled>
+		</div>
+	</div>
+	<script src="cronometro.js"></script>
+</body>
+</html>
